@@ -8,8 +8,15 @@ Hints:
 - Assumes access to a **bare-metal Kubernetes cluster** the nano can join e.g. set up using [Project Max](https://github.com/helmuthva/ceil/tree/max).
 - Assumes basic knowledge of [**Ansible**](https://www.ansible.com/), [**Docker**](https://www.docker.com/) and Kubernetes.
 
+## Mission
 
-## Goals and features
+- **Evaluate feasibility** and complexity of **Kubernetes + machine learning on edge devices** for future smart IoT projects
+- Provide **patterns to the Jetson community** on how to use Ansible and Kubernetes with Jetson devices for **automation** and  **orchestration**
+- **Lower the entry barrier** for some machine learning **students** by using cheap edge devices available offline with this starter instead of requiring commercial clouds available online
+- Provide a modern **Jupyter** based infrastructure for students of the  **Stanford CS229 course** using Octave as kernel
+- Remove some personal rust and have **fun**
+
+## Features
 
 - [x] basics: Prepare **hardware**
 - [x] basics: Automatically provision requirements on **macOS device for development**
