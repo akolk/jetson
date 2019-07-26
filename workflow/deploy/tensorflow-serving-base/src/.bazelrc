@@ -6,6 +6,9 @@ build:release --copt=-msse4.2
 build:cuda --crosstool_top=@local_config_cuda//crosstool:toolchain
 build:cuda --define=using_cuda=true --define=using_cuda_nvcc=true
 
+# Jetson does not support NCCL
+build:jetson --define=noaws=true --define=nogcp=true --define=nohdfs=true --define=noignite=true --define=nokafka=true --define=nonccl=true
+
 # Please note that MKL on MacOS or windows is still not supported.
 # If you would like to use a local MKL instead of downloading, please set the
 # environment variable "TF_MKL_ROOT" every time before build.

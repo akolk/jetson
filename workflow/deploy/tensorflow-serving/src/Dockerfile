@@ -22,4 +22,13 @@ COPY /models/testdata/saved_model_half_plus_two_mkl /models/half_plus_two
 # Install testdata
 COPY /models/testdata /testdata
 
+# Enable cuda for tfs
 ENV CUDA_VISIBLE_DEVICES='0'
+
+# Expose ports
+# grpc
+EXPOSE 8500
+# rest
+EXPOSE 8501
+# webservice
+EXPOSE 80
