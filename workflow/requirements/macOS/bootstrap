@@ -39,6 +39,10 @@ brew update
 fancy_echo "Installing ruby ..."
 brew install rbenv ruby-build ruby
 
+# Ensure that wget is installed
+fancy_echo "Installing wget ..."
+brew install wget
+
 # Ensure some configuration in ~/.bash_profile
 fancy_echo "Configuring ~/.bash_profile ..."
 grep -qxF 'export COMPOSER_PROCESS_TIMEOUT=3600' ~/.bash_profile || echo 'export COMPOSER_PROCESS_TIMEOUT=3600' >> ~/.bash_profile
